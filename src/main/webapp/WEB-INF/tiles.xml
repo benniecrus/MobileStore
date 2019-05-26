@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base-definition" template="/views/tiles/layout/layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/views/tiles/product/add-product-header.jsp"></put-attribute>
+		<put-attribute name="left-side" value="/views/tiles/includes/left-side.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/views/tiles/includes/footer.jsp"></put-attribute>
+	</definition>
+
+	<!--Home page -->
+	<definition name="home-page" extends="base-definition">
+		<put-attribute name="title" value="home" />
+		<put-attribute name="body" value="/views/home.jsp"></put-attribute>
+	</definition>
+
+	<!-- Product Add -->
+	<definition name="product-add" extends="base-definition">
+		<put-attribute name="title" value="Add products" />
+		<put-attribute name="body"
+			value="/views/tiles/product/product-add.jsp"></put-attribute>
+	</definition>
+
+	<!-- Shopping Cart Screen -->
+	<definition name="shopping-cart" extends="base-definition">
+		<put-attribute name="title" value="Shopping cart" />
+		<put-attribute name="body"
+			value="/views/tiles/cart/shopping-cart.jsp"></put-attribute>
+	</definition>
+	<!-- Product Manage -->
+	<definition name="product-manager" extends="base-definition">
+		<put-attribute name="title" value="Product manager" />
+		<put-attribute name="header"
+			value="/views/tiles/product/add-product-header.jsp"></put-attribute>
+		<put-attribute name="body"
+			value="/views/tiles/product/product-manager.jsp"></put-attribute>
+	</definition>
+
+	<!-- Product Manage -->
+	<definition name="order-list" extends="base-definition">
+		<put-attribute name="title" value="Order Manager" />
+		<put-attribute name="body" value="/views/tiles/order/order-list.jsp"></put-attribute>
+	</definition>
+
+	<!-- Product Editor -->
+	<definition name="edit-product" extends="base-definition">
+		<put-attribute name="title" value="Product manager" />
+		<put-attribute name="body"
+			value="/views/tiles/product/edit-product.jsp"></put-attribute>
+	</definition>
+
+	<!-- Information Order -->
+	<definition name="order-information" extends="base-definition">
+		<put-attribute name="title" value="Information Order" />
+		<put-attribute name="body"
+			value="/views/tiles/order/order-information.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Information Order -->
+	<definition name="product-list" extends="base-definition">
+		<put-attribute name="title" value="Product List" />
+		<put-attribute name="body"
+			value="/views/tiles/product/product-list.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Information Order -->
+	<definition name="error-page" extends="base-definition">
+		<put-attribute name="title" value="error page" />
+		<put-attribute name="body"
+			value="/views/error-page.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>

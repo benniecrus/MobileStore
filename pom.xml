@@ -11,7 +11,7 @@
 	<properties>
 		<junit.version>4.12</junit.version>
 		<servlet.version>3.0.1</servlet.version>
-		<hibernate.version>4.3.11.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<spring.version>4.3.11.RELEASE</spring.version>
 		<tiles.version>3.0.8</tiles.version>
 		<spring.security.version>3.2.3.RELEASE</spring.security.version>
